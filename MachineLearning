@@ -1,0 +1,124 @@
+Types of machine learning problems
+There are various ways to classify machine learning problems. Here, we discuss the most obvious ones.
+1. On basis of the nature of the learning “signal” or “feedback” available to a learning system
+• Supervised learning: The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs. The training process continues until the model achieves the desired level of accuracy on the training data. Some real-life examples are:
+• Image Classification: You train with images/labels. Then in the future you give a new image expecting that the computer will recognize the new object.
+• Market Prediction/Regression: You train the computer with historical market data and ask the computer to predict the new price in the future.
+• Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. It is used for clustering population in different groups. Unsupervised learning can be a goal in itself (discovering hidden patterns in data).
+• Clustering: You ask the computer to separate similar data into clusters, this is essential in research and science.
+
+Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). The program is provided feedback in terms of rewards and punishments as it navigates its problem space
+
+2. On the basis of “output” desired from a machine learned system
+• Classification: Inputs are divided into two or more classes, and the learner must produce a model that assigns unseen inputs to one or more (multi-label classification) of these classes. This is typically tackled in a supervised way. Spam filtering is an example of classification, where the inputs are email (or other) messages and the classes are “spam” and “not spam”.
+• Regression: It is also a supervised learning problem, but the outputs are continuous rather than discrete. For example, predicting the stock prices using historical data.
+
+Terminologies of Machine Learning
+• Model
+A model is a specific representation learned from data by applying some machine learning algorithm. A model is also called hypothesis.
+• Feature
+A feature is an individual measurable property of our data. A set of numeric features can be conveniently described by a feature vector. Feature vectors are fed as input to the model. For example, in order to predict a fruit, there may be features like color, smell, taste, etc.
+Note: Choosing informative, discriminating and independent features is a crucial step for effective algorithms. We generally employ a feature extractor to extract the relevant features from the raw data.
+• Target (Label)
+A target variable or label is the value to be predicted by our model. For the fruit example discussed in the features section, the label with each set of input would be the name of the fruit like apple, orange, banana, etc.
+• Training
+The idea is to give a set of inputs(features) and it’s expected outputs(labels), so after training, we will have a model (hypothesis) that will then map new data to one of the categories trained on.
+• Prediction
+Once our model is ready, it can be fed a set of inputs to which it will provide a predicted output(label).
+
+Within the field of data analytics, machine learning is used to devise complex models and algorithms that lend themselves to prediction; in commercial use, this is known as predictive analytics. These analytical models allow researchers, data scientists, engineers, and analysts to “produce reliable, repeatable decisions and results” and uncover “hidden insights” through learning from historical relationships and trends in the data set(input). 
+
+Classification of Machine Learning
+Machine learning implementations are classified into three major categories, depending on the nature of the learning “signal” or “response” available to a learning system which is as follows:- 
+ 
+1. Supervised learning: When an algorithm learns from example data and associated target responses that can consist of numeric values or string labels, such as classes or tags, in order to later predict the correct response when posed with new examples comes under the category of Supervised learning. 
+Unsupervised learning: Whereas when an algorithm learns from plain examples without any associated response, leaving to the algorithm to determine the data patterns on its own. This type of algorithm tends to restructure the data into something else, such as new features that may represent a class or a new series of un-correlated values. They are quite useful in providing humans with insights into the meaning of data and new useful inputs to supervised machine learning algorithms. 
+Reinforcement learning: When you present the algorithm with examples that lack labels, as in unsupervised learning. However, you can accompany an example with positive or negative feedback according to the solution the algorithm proposes comes under the category of Reinforcement learning, which is connected to applications for which the algorithm must make decisions (so the product is prescriptive, not just descriptive, as in unsupervised learning), and the decisions bear consequences. In the human world, it is just like learning by trial and error. 
+
+Categorizing on the basis of required Output
+Another categorization of machine learning tasks arises when one considers the desired output of a machine-learned system: 
+ 
+2. Classification: When inputs are divided into two or more classes, and the learner must produce a model that assigns unseen inputs to one or more (multi-label classification) of these classes. This is typically tackled in a supervised way. Spam filtering is an example of classification, where the inputs are email (or other) messages and the classes are “spam” and “not spam”.
+3. Regression: Which is also a supervised problem, A case when the outputs are continuous rather than discrete.
+4. Clustering: When a set of inputs is to be divided into groups. Unlike in classification, the groups are not known beforehand, making this typically an unsupervised task
+
+
+Arthur Samuel
+Field of study that gives computers the capability to learn without being explicitly programmed
+
+Machine Learning(ML) can be explained as automating and improving the learning process of computers based on their experiences without being actually programmed i.e. without any human assistance. The process starts with feeding good quality data and then training our machines(computers) by building machine learning models using the data and different algorithms. The choice of algorithms depends on what type of data do we have and what kind of task we are trying to automate.
+Basic Difference in ML and Traditional Programming?
+• Traditional Programming : We feed in DATA (Input) + PROGRAM (logic), run it on machine and get output.
+• Machine Learning : We feed in DATA(Input) + Output, run it on machine during training and the machine creates its own program(logic), which can be evaluated while testing.
+What does exactly learning means for a computer?
+A computer is said to be learning from Experiences with respect to some class of Tasks, if its performance in a given Task improves with the Experience.
+A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E
+DATA: It can be any unprocessed fact, value, text, sound, or picture that is not being interpreted and analyzed. 
+INFORMATION: Data that has been interpreted and manipulated and has now some meaningful inference for the users. 
+KNOWLEDGE: Combination of inferred information, experiences, learning, and insights. Results in awareness or concept building for an individual or organization. 
+How we split data in Machine Learning?  
+• Training Data: The part of data we use to train our model. This is the data that your model actually sees(both input and output) and learns from.
+• Validation Data: The part of data that is used to do a frequent evaluation of the model, fit on the training dataset along with improving involved hyperparameters (initially set parameters before the model begins learning). This data plays its part when the model is actually training.
+• Testing Data: Once our model is completely trained, testing data provides an unbiased evaluation. When we feed in the inputs of Testing data, our model will predict some values(without seeing actual output). After prediction, we evaluate our model by comparing it with the actual output present in the testing data. This is how we evaluate and see how much our model has learned from the experiences feed in as training data, set at the time of training.
+this inference from manipulated data is Information. So, Data is a must for Information. Now Knowledge has its role in differentiating between two individuals having the same information. Knowledge is actually not technical content but is linked to the human thought process. 
+Properties of Data – 
+5. Volume: Scale of Data. With the growing world population and technology at exposure, huge data is being generated each and every millisecond.
+6. Variety: Different forms of data – healthcare, images, videos, audio clippings.
+7. Velocity: Rate of data streaming and generation.
+8. Value: Meaningfulness of data in terms of information that researchers can infer from it.
+9. Veracity: Certainty and correctness in data we are working on.
+
+Python libraries that used in Machine Learning are: 
+ 
+• Numpy
+NumPy is a very popular python library for large multi-dimensional array and matrix processing, with the help of a large collection of high-level mathematical functions. It is very useful for fundamental scientific computations in Machine Learning. It is particularly useful for linear algebra, Fourier transform, and random number capabilities. High-end libraries like TensorFlow uses NumPy internally for manipulation of Tensors. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Scipy
+SciPy is a very popular library among Machine Learning enthusiasts as it contains different modules for optimization, linear algebra, integration and statistics. There is a difference between the SciPy library and the SciPy stack. The SciPy is one of the core packages that make up the SciPy stack. SciPy is also very useful for image manipulation. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Scikit-learn
+Scikit-learn is one of the most popular ML libraries for classical ML algorithms. It is built on top of two basic Python libraries, viz., NumPy and SciPy. Scikit-learn supports most of the supervised and unsupervised learning algorithms. Scikit-learn can also be used for data-mining and data-analysis, which makes it a great tool who is starting out with ML. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Theano
+We all know that Machine Learning is basically mathematics and statistics. Theano is a popular python library that is used to define, evaluate and optimize mathematical expressions involving multi-dimensional arrays in an efficient manner. It is achieved by optimizing the utilization of CPU and GPU. It is extensively used for unit-testing and self-verification to detect and diagnose different types of errors. Theano is a very powerful library that has been used in large-scale computationally intensive scientific projects for a long time but is simple and approachable enough to be used by individuals for their own projects. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• TensorFlow
+TensorFlow is a very popular open-source library for high performance numerical computation developed by the Google Brain team in Google. As the name suggests, Tensorflow is a framework that involves defining and running computations involving tensors. It can train and run deep neural networks that can be used to develop several AI applications. TensorFlow is widely used in the field of deep learning research and application. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Keras
+Keras is a very popular Machine Learning library for Python. It is a high-level neural networks API capable of running on top of TensorFlow, CNTK, or Theano. It can run seamlessly on both CPU and GPU. Keras makes it really for ML beginners to build and design a Neural Network. One of the best thing about Keras is that it allows for easy and fast prototyping.
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• PyTorch
+PyTorch is a popular open-source Machine Learning library for Python based on Torch, which is an open-source Machine Learning library which is implemented in C with a wrapper in Lua. It has an extensive choice of tools and libraries that supports on Computer Vision, Natural Language Processing(NLP) and many more ML programs. It allows developers to perform computations on Tensors with GPU acceleration and also helps in creating computational graphs. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Pandas
+Pandas is a popular Python library for data analysis. It is not directly related to Machine Learning. As we know that the dataset must be prepared before training. In this case, Pandas comes handy as it was developed specifically for data extraction and preparation. It provides high-level data structures and wide variety tools for data analysis. It provides many inbuilt methods for groping, combining and filtering data. 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
+
+
+• Matplotlib
+Matplotlib is a very popular Python library for data visualization. Like Pandas, it is not directly related to Machine Learning. It particularly comes in handy when a programmer wants to visualize the patterns in the data. It is a 2D plotting library used for creating 2D graphs and plots. A module named pyplot makes it easy for programmers for plotting as it provides features to control line styles, font properties, formatting axes, etc. It provides various kinds of graphs and plots for data visualization, viz., histogram, error charts, bar chats, etc, 
+
+From <https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/> 
